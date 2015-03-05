@@ -72,7 +72,7 @@
 
                 <!-- Website Logo -->
                 <div class="logo clearfix">
-                                            <a href="http://inspirythemesdemo.com/medicalpress/">
+                                            <a href="<?php echo get_option('home'); ?>">
                             <img src="<?php bloginfo( 'template_directory' ); ?>/images/logo.png"
                                  alt="Medical Press"/>
                         </a>
