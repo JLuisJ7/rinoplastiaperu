@@ -15,9 +15,9 @@ add_action( 'init', 'theme_register_menus' );
 =============================================
 */
  function wordpress_breadcrumbs() {
-  $delimiter = '»';  $name = 'Inicio'; //text for the 'Home' link  $currentBefore = '<span class="current">';  $currentAfter = '</span>';
+  $delimiter = '<span class="divider"></span>';  $name = 'Inicio'; //text for the 'Home' link  $currentBefore = '<span class="current">';  $currentAfter = '</span>';
   if ( !is_home() && !is_front_page() || is_paged() ) {
-    echo '<div id="crumbs">';
+    echo '<div class="bread-crumb">';
     global $post;    $home = get_bloginfo('url');    echo '<a href="' . $home . '">' . $name . '</a> ' . $delimiter . ' ';
     if ( is_category() ) {      global $wp_query;      $cat_obj = $wp_query->get_queried_object();      $thisCat = $cat_obj->term_id;      $thisCat = get_category($thisCat);      $parentCat = get_category($thisCat->parent);      if ($thisCat->parent != 0) echo(get_category_parents($parentCat, TRUE, ' ' . $delimiter . ' '));      echo $currentBefore . 'Archive by category ';      single_cat_title();      echo '' . $currentAfter;
     } elseif ( is_day() ) {      echo '<a href="' . get_year_link(get_the_time('Y')) . '">' . get_the_time('Y') . '</a> ' . $delimiter . ' ';      echo '<a href="' . get_month_link(get_the_time('Y'),get_the_time('m')) . '">' . get_the_time('F') . '</a> ' . $delimiter . ' ';      echo $currentBefore . get_the_time('d') . $currentAfter;

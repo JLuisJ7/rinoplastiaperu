@@ -319,10 +319,22 @@ blockquote p {
 }
 .bread-crumb {
   padding: 0;
-  font-size: 14px;
-  font-weight: 400;
+  font-size: 15px;
+  font-weight: 500;
   margin-top: 17px;
+  color: red;
 }
+.bread-crumb a{
+  font-size: 15px;
+  font-weight: 500;
+  color:#f15b5a;
+  
+}
+.bread-crumb a:hover{
+  color:#f15b5a;
+
+}
+
 .bread-crumb .breadcrumb {
   padding: 0;
   background: none;
