@@ -158,7 +158,7 @@
     <div class=" page-top clearfix">
         <div class="container">
             <div class="row">
-                <div class="col-lg-9 col-md-8 col-sm-12 ">
+                <div class="col-lg-9 col-md-8 col-sm-12 ">                   
                     <?php if (function_exists('wordpress_breadcrumbs')) wordpress_breadcrumbs(); ?>                   
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-12 ">

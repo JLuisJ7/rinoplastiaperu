@@ -185,9 +185,9 @@
     /*-----------------------------------------------------------------*/
     /* Toggle
     /*-----------------------------------------------------------------*/
-    $('.toggle-main .toggle:first-child').addClass('current')
+    /*$('.toggle-main .toggle:first-child').addClass('current')
         .find('i.fa').removeClass( 'fa-plus').addClass( 'fa-minus').end()
-        .children('.toggle-content').css('display', 'block');
+        .children('.toggle-content').css('display', 'block');*/
 
     $('.toggle-title').click(function () {
         var parent_toggle = $(this).closest('.toggle');
