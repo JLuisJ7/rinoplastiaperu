@@ -159,6 +159,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-9 col-md-8 col-sm-12 ">
+                    <?php if (function_exists('wordpress_breadcrumbs')) wordpress_breadcrumbs(); ?>
                     <h1 class="entry-title">Services</h1>
                     <nav class="bread-crumb">
                         <ul class="breadcrumb clearfix">
