@@ -154,7 +154,7 @@
         </div>
     </div>
     <?php } else { ?>
-    <div class="banner clearfix" style="background-repeat: no-repeat; background-position: center top; background-image: url('http://inspirythemesdemo.com/medicalpress/wp-content/themes/medical-theme/images/banner.jpg'); background-size: cover;"></div>
+    <div class="banner clearfix" style="background-repeat: no-repeat; background-position: center top; background-image: url('<?php bloginfo( 'template_directory' ); ?>/images/banner.jpg'); background-size: cover;"></div>
     <div class=" page-top clearfix">
         <div class="container">
             <div class="row">
